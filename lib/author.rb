@@ -9,8 +9,10 @@ class Author
     @books = []
   end
 
-  def add_book(title, publication_date)
+  def add_book(title, date)
     books << title
+    books << date
+    # require "pry"; binding.pry
   end
 
 
