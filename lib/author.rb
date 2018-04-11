@@ -10,11 +10,11 @@ class Author
   end
 
   def add_book(title, date)
-    books << title
-    books << date
-    # require "pry"; binding.pry
+    book_list = {
+      author_first_name: first_name,
+      author_last_name: last_name,
+      publication_date: date,
+      title: title}
+    @books << Book.new(book_list)
   end
-
-
-
 end
